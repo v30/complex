@@ -16,7 +16,7 @@ after_success:
     # login to docker cli
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
     # push images to docker hub
-    - docker push v30/multi-client
-    - docker push v30/multi-nginx
-    - docker push v30/multi-server
-    - docker push v30/multi-worker
+    - docker push wenov3/multi-client
+    - docker push wenov3/multi-nginx
+    - docker push wenov3/multi-server
+    - docker push wenov3/multi-worker
